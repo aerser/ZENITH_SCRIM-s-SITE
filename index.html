@@ -28,7 +28,12 @@
         <p>&copy; 2025 ZENITH SCRIM. All rights reserved.</p>
     </footer>
     <script>
-        document.getElementById('random-number').textContent = "ランダムな数字: " + Math.floor(Math.random() * 100) + 1;
+        function updateRandomNumber() {
+            document.getElementById('random-number').textContent = "ping: " + Math.floor(Math.random() * 100) + 1;
+        }
+
+        setInterval(updateRandomNumber, 1000); // Update every 1 second
+        updateRandomNumber(); // Initial call to display the first number immediately
     </script>
     <script src="script.js"></script>
 </body>
