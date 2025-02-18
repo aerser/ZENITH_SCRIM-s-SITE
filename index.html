@@ -12,17 +12,24 @@
     </header>
     <main>
         <section>
-            <h2>私たちについて</h2>
+            <h2>scrim について</h2>
             <p>ZENITH SCRIMはPC勢の方々も含めたスクリムの開催をしています</p>
         </section>
         <section>
             <h2>お問い合わせ</h2>
             <p><a href="https://forms.gle/Ln4dFQrFkPfZf5fy5" target="_blank">お問い合わせフォームに移動</a></p>
-        </section>
+        </section> 
+        <section>
+            <h3> server ping </h3>
+            <p id="random-number"></p>
+　　　　　</section>
     </main>
     <footer>
         <p>&copy; 2025 ZENITH SCRIM. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('random-number').textContent = "ランダムな数字: " + Math.floor(Math.random() * 100) + 1;
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
