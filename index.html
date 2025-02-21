@@ -180,8 +180,8 @@
             const keyText = document.getElementById("custom-key").textContent;
             navigator.clipboard.writeText(keyText).then(() => {
                 alert("コピーしました!");
-                let user = "未ログインユーザー";
-                saveAccessHistory(`${user} がキーをコピーしました`);
+                let user = "user.username";
+                saveAccessHistory(`${user.username} がキーをコピーしました`);
             });
         });
     </script>
