@@ -103,7 +103,7 @@
         <button id="login-button">Discordでログイン</button>
     </div>
     <div class="key-container" id="key-container">
-        カスタムキー: <span id="custom-key">****-****</span>
+        カスタムキー: <span id="custom-key">-</span>
         <button id="copy-button">コピー</button>
     </div>
     <div class="history" id="history-container">
@@ -143,7 +143,7 @@
                 });
 
                 setTimeout(() => {
-                    document.getElementById("custom-key").textContent = "ABCD-1234";
+                    document.getElementById("custom-key").textContent = "現在マッチが開催されていません。更新をお待ちください。";
                     keyContainer.classList.add("visible");
                 }, 1000);
 
